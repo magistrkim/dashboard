@@ -2,4 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
+body {
+    @apply font-normal text-sm
+}
+.expand-button {
+    @apply text-sm bg-slate-500 w-7 h-7 text-black z-10
+}
+.close-button {
+    @apply text-sm bg-blue w-7 h-7 text-black z-10
+}
