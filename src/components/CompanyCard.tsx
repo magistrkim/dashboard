@@ -7,9 +7,9 @@ interface CompanyCardProps {
 
 const CompanyCard: React.FC<CompanyCardProps> = ({ company }) => {
   return (
-    <ul className="p-4 m-2 text-sm font-bold text-zinc">
+    <ul className="company-list">
       <li className="mb-2">
-        ticker: <span className="font-normal">{company.ticker}</span>{" "}
+        Ticker: <span className="font-normal">{company.ticker}</span>{" "}
       </li>
       <li className="mb-2">
         Name: <span className="font-normal">{company.name}</span>{" "}

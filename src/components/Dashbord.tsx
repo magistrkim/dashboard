@@ -6,6 +6,10 @@ import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import { Company } from "../types/types";
 import CompanyCard from "./CompanyCard";
 import { fetchCompanyData } from "./../services/api";
+import { Intent, Spinner } from "@blueprintjs/core";
+
+const mySpinner = <Spinner intent={Intent.PRIMARY} />;
+
 const Dashbord = () => {
   const [companies, setCompanies] = useState<Company[]>([]);
   const [loading, setLoading] = useState(true);
@@ -35,7 +39,7 @@ const Dashbord = () => {
 
     fetchData();
   }, []);
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <div>{mySpinner}</div>;
   if (error) return <p>{error}</p>;
 
   const renderMosaicWindow = (id: string) => {
@@ -45,7 +49,7 @@ const Dashbord = () => {
     if (company) {
       return <CompanyCard company={company} />;
     } else {
-      return <div>Loading...</div>;
+      return <div>{mySpinner}</div>;
     }
   };
 

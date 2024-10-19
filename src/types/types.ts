@@ -49,6 +49,12 @@ export type MosaicKey = string | number;
 
 export type MosaicDirection = "row" | "column";
 
+export interface MosaicWindowProps<T> {
+  title: string;
+  path: Array<T>;
+  children: React.ReactNode;
+}
+
 export interface MosaicParent<T extends MosaicKey> {
   direction: MosaicDirection;
   first: MosaicNode<T>;
