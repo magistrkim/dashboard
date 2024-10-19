@@ -2,6 +2,16 @@
 
 This is a simple dashboard built using the `react-mosaic-component` library. The dashboard contains three resizable windows that display Company content. The project demonstrates how to integrate React Mosaic for a flexible layout, alongside TypeScript and React.
 
+  <table>
+  <tr>
+    <td align="center">
+      <a href="https://www.linkedin.com/in/nataliya-kachor-522170271/" target="_blank">
+        <img src="https://github.com/user-attachments/assets/8eda0535-40b6-42cf-80ec-e195d1a5af0b" alt="Project Image" style="width: 300px;">
+      </a>
+    </td>
+  </tr>
+</table>
+
 ## Table of Contents
 - [Features](#features)
 - [Technologies](#technologies)
