@@ -1,50 +1,55 @@
-# React + TypeScript + Vite
+# React Mosaic Dashboard Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple dashboard built using the `react-mosaic-component` library. The dashboard contains three resizable windows that display Company content. The project demonstrates how to integrate React Mosaic for a flexible layout, alongside TypeScript and React.
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Running the Project](#running-the-project)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Resizable mosaic windows
+- Drag and drop window resizing
+- Basic placeholder content for each window
+- React, TypeScript, and Tailwind CSS integration
 
-## Expanding the ESLint configuration
+## Technologies
+- **React**: Front-end library
+- **React Mosaic**: For creating resizable and customizable dashboard layouts
+- **TypeScript**: Static typing for JavaScript
+- **Vite**: Development environment and bundler
+- **Tailwind CSS**: For quick and customizable styling
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Installation
 
-- Configure the top-level `parserOptions` property like this:
+To get started with the project, follow these steps:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/react-mosaic-dashboard.git
+    cd react-mosaic-dashboard
+    ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. **Install dependencies**:
+    ```bash
+    npm install
+    ```
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Running the Project
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+After installing the dependencies, follow these steps to start the project:
+
+1. **Start the development server**:
+    ```bash
+    npm run dev
+    ```
+
+2. **Open the app**:  
+   By default, the development server runs at `http://localhost:5173`.  
+   Open your browser and go to:
+    ```
+    http://localhost:5173
+    ```
+
+
