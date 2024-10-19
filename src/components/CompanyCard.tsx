@@ -7,7 +7,7 @@ interface CompanyCardProps {
 
 const CompanyCard: React.FC<CompanyCardProps> = ({ company }) => {
   return (
-    <ul className="company-list">
+    <dl className="company-list">
       <li className="mb-2">
         Ticker: <span className="font-normal">{company.ticker}</span>{" "}
       </li>
@@ -83,7 +83,7 @@ const CompanyCard: React.FC<CompanyCardProps> = ({ company }) => {
         Legacy industry group:{" "}
         <span className="font-normal">{company.legacy_industry_group}</span>{" "}
       </li>
-    </ul>
+    </dl>
   );
 };
 

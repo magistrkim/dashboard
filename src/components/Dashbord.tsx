@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { Mosaic, MosaicWindow, MosaicNode } from "react-mosaic-component";
-import "react-mosaic-component/react-mosaic-component.css";
-import "@blueprintjs/core/lib/css/blueprint.css";
-import "@blueprintjs/icons/lib/css/blueprint-icons.css";
 import { Company } from "../types/types";
 import CompanyCard from "./CompanyCard";
 import { fetchCompanyData } from "./../services/api";
 import { Intent, Spinner } from "@blueprintjs/core";
+import "@blueprintjs/core/lib/css/blueprint.css";
+import "react-mosaic-component/react-mosaic-component.css";
 
 const mySpinner = <Spinner intent={Intent.PRIMARY} />;
 

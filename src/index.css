@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 body {
-    @apply font-normal text-sm
+  @apply font-normal text-sm;
 }
 .company-list {
-    @apply  p-4 m-2 text-sm font-bold text-zinc
+  @apply p-4 m-2 text-sm font-bold text-zinc;
 }
 .expand-button {
-    @apply text-sm bg-slate-500 w-7 h-7 text-black rounded-full
+  @apply text-sm bg-slate-500 w-5 h-5 text-black rounded-full mr-2 justify-center items-center mt-1;
 }
 .close-button {
-    @apply text-sm bg-blue w-7 h-7 text-black rounded-full
+  @apply text-sm bg-blue w-5 h-5 text-black rounded-full justify-center items-center mt-1 mr-2;
 }
