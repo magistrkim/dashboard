@@ -63,30 +63,30 @@ After installing the dependencies, follow these steps to start the project:
     
     ```
     
-## Docker
+# Docker
 
 To run this project using Docker, follow these steps:
 
 1. Build the Docker Image
 Create a Dockerfile in the root of your project if you haven’t already. Here’s a sample configuration:
 
-# Use a Node.js base image
+**Use a Node.js base image**
 FROM node:18
 
-# Set working directory
+**Set working directory**
 WORKDIR /app
 
-# Copy package files and install dependencies
+**Copy package files and install dependencies**
 COPY package*.json ./
 RUN npm install
 
-# Copy the rest of the application files
+**Copy the rest of the application files**
 COPY . .
 
-# Expose the app's port
+**Expose the app's port**
 EXPOSE 5173
 
-# Start the development server
+**Start the development server**
 CMD ["npm", "run", "dev"]
 To build the Docker image, run:
 
