@@ -73,54 +73,47 @@ Create a Dockerfile in the root of your project if you havenâ€™t already. Hereâ€
 
 **Use a Node.js base image**
 
+```bash
 FROM node:18
+ ```
 
 **Set working directory**
-
+```bash
 WORKDIR /app
-
+ ```
 **Copy package files and install dependencies**
 
+```bash
 COPY package*.json ./
 RUN npm install
-
+ ```
 **Copy the rest of the application files**
 
+```bash
 COPY . .
-
+ ```
 **Expose the app's port**
 
+```bash
 EXPOSE 5173
-
+ ```
 **Start the development server**
-
+```bash
 CMD ["npm", "run", "dev"]
 To build the Docker image, run:
-
 docker build -t react-mosaic-dashboard.
+ ```
 
 2. Run the Docker Container
 After building the image, run the container:
-docker run -p 5173:5173 react-mosaic-dashboard
 
+```bash
+docker run -p 5173:5173 react-mosaic-dashboard
+ ```
 This will start the application inside a containerized environment and expose it on port 5173.
 
 You can access it at http://localhost:5173.
 
-4. Using Docker Compose (Optional)
-If you want to use Docker Compose, create a docker-compose.yml file:
 
-version: '3'
-services:
-  app:
-    build: .
-    ports:
-      - "5173:5173"
-Then start the application using:
-
-docker-compose up
-To stop the application, use:
-
-docker-compose down
 
 
